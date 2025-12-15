@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aktar Super Mart</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f7f9fc;
+      color:#333;
+    }
+    header{
+      background:linear-gradient(135deg,#1e7f3b,#2ecc71);
+      color:white;
+      text-align:center;
+      padding:30px 20px;
+    }
+    header img{
+      width:120px;
+      margin-bottom:10px;
+    }
+    nav{
+      background:#155c2e;
+      text-align:center;
+      padding:12px;
+    }
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 12px;
+      font-weight:bold;
+    }
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:30px 20px;
+    }
+    h2{
+      color:#1e7f3b;
+      text-align:center;
+      margin-bottom:20px;
+    }
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 6px 15px rgba(0,0,0,0.08);
+      text-align:center;
+    }
+    footer{
+      background:#155c2e;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
+    }
+    .btn{
+      display:inline-block;
+      padding:12px 20px;
+      background:#25D366;
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Aktar Super Mart Logo">
+  <h1>Aktar Super Mart</h1>
+  <p>Fresh • Affordable • Trusted</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#leadership">Leadership</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="container">
+  <h2>About Us</h2>
+  <p style="text-align:center;">
+    Aktar Super Mart is your trusted neighborhood grocery store,  
+    providing fresh vegetables, fruits, and daily essentials at affordable prices.
+  </p>
+</section>
+
+<section id="products" class="container">
+  <h2>Our Products</h2>
+  <div class="cards">
+    <div class="card">Fresh Vegetables</div>
+    <div class="card">Fresh Fruits</div>
+    <div class="card">Rice, Dal & Atta</div>
+    <div class="card">Daily Grocery Items</div>
+  </div>
+</section>
+
+<section id="leadership" class="container">
+  <h2>Leadership</h2>
+  <p style="text-align:center;">
+    <strong>CEO:</strong> Sajidul Aktar<br>
+    <strong>Founder:</strong> Sajidul Aktar
+  </p>
+</section>
+
+<section id="contact" class="container">
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">
+    📍 India <br>
+    📞 +91 XXXXXXXXXX <br><br>
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+      Order on WhatsApp
+    </a>
+  </p>
+</section>
+
+<footer>
+  © 2025 Aktar Super Mart. All Rights Reserved.
+</footer>
+
+</body>
+</html>
