@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-  <title>Aktar Super Mart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aktar Super Mart | Grocery Store</title>
+  <meta name="description" content="Aktar Super Mart is your trusted neighborhood grocery store providing fresh vegetables, fruits and daily essentials at affordable prices.">
+  <link rel="icon" type="image/png" href="logo.png">
 
   <style>
     body{
       margin:0;
-      font-family: Arial, sans-serif;
+      font-family:Arial, sans-serif;
       background:#f7f9fc;
       color:#333;
     }
 
     header{
-      background:linear-gradient(135deg,#1e7f3b,#2ecc71);
+      background:linear-gradient(135deg,#1e7f3b,#2cc771);
       color:white;
       text-align:center;
       padding:30px 20px;
@@ -71,16 +74,9 @@
       margin-top:15px;
     }
 
-    footer{
-      background:#155c2e;
-      color:white;
-      text-align:center;
-      padding:15px;
-      margin-top:30px;
-    }
-
     .btn{
       display:inline-block;
+      margin:8px;
       padding:12px 20px;
       background:#25D366;
       color:white;
@@ -88,23 +84,31 @@
       text-decoration:none;
       font-weight:bold;
     }
+
+    .btn.call{ background:#1e7f3b; }
+    .btn.review{ background:#f4b400; color:#000; }
+
+    iframe{
+      width:100%;
+      height:300px;
+      border:0;
+      border-radius:12px;
+    }
+
+    footer{
+      background:#155c2e;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
+    }
   </style>
-<head>
-  <meta charset="UTF-8">
-
-  <title>Aktar Super Mart | Grocery Store</title>
-
-  <meta name="description" content="Aktar Super Mart is your trusted neighborhood grocery store providing fresh vegetables, fruits and daily essentials at affordable prices.">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" href="logo.png">
 </head>
 
 <body>
 
 <header>
-  <img src="logo.png" alt="Aktar Super Mart logo">
+  <img src="logo.png" alt="Aktar Super Mart Logo">
   <h1>Aktar Super Mart</h1>
   <p>Fresh • Affordable • Trusted</p>
 </header>
@@ -112,23 +116,23 @@
 <nav>
   <a href="#about">About</a>
   <a href="#products">Products</a>
-  <a href="#leadership">Leadership</a>
   <a href="#contact">Contact</a>
+  <a href="#location">Location</a>
 </nav>
 
 <section id="about" class="container">
   <h2>About Us</h2>
   <p style="text-align:center;">
-    Aktar Super Mart is your trusted neighborhood grocery store,  
+    Aktar Super Mart is your trusted neighborhood grocery store,
     providing fresh vegetables, fruits, and daily essentials at affordable prices.
   </p>
 </section>
 
+<!-- PRODUCT GALLERY -->
 <section id="products" class="container">
   <h2>Our Products</h2>
 
   <div class="cards">
-
     <div class="card" onclick="toggleImage('veg')">
       Fresh Vegetables
       <img id="veg" src="vegetable.jpeg" class="product-img">
@@ -146,40 +150,53 @@
 
     <div class="card" onclick="toggleImage('item')">
       Rice, Dal & Atta
-      <img id="item" src="item.jpg" class="product-img">
+      <img id="item" src="item.jpeg" class="product-img">
     </div>
-
   </div>
 </section>
 
-<section id="leadership" class="container">
-  <h2>Leadership</h2>
+<!-- CONTACT + TIME -->
+<section id="contact" class="container">
+  <h2>Contact & Opening Time</h2>
+
   <p style="text-align:center;">
-    <strong>CEO:</strong> Sajidul Aktar<br>
-    <strong>Founder:</strong> Sajidul Aktar
+    🕒 <strong>Opening Hours:</strong><br>
+    Monday – Sunday: 7:00 AM – 10:00 PM
   </p>
+
+  <p style="text-align:center;">
+    📞 +91 8638928492
+  </p>
+
+  <div style="text-align:center;">
+    <a class="btn call" href="tel:+918638928492">Call Now</a>
+    <a class="btn" href="https://wa.me/918638928492" target="_blank">WhatsApp</a>
+    <a class="btn review" href="https://www.google.com/search?q=Aktar+Super+Mart+review" target="_blank">
+      Google Review
+    </a>
+  </div>
 </section>
 
-<section id="contact" class="container">
-  <h2>Contact Us</h2>
-  <p style="text-align:center;">
-    📍 India <br>
-    📞 +91 8638928492 <br><br>
-    <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">
-      Order on WhatsApp
-    </a>
-  </p>
+<!-- LOCATION -->
+<section id="location" class="container">
+  <h2>Our Location</h2>
+  <p style="text-align:center;">📍 Aktar Super Mart, Assam, India</p>
+
+  <iframe
+    src="https://www.google.com/maps?q=Aktar+Super+Mart&output=embed"
+    loading="lazy">
+  </iframe>
 </section>
 
 <footer>
-  © 2025 Aktar Super Mart. All Rights Reserved.
+  © 2026 Aktar Super Mart. All Rights Reserved.
 </footer>
 
 <script>
-function toggleImage(id){
-  const img = document.getElementById(id);
-  img.style.display = img.style.display === "block" ? "none" : "block";
-}
+  function toggleImage(id){
+    const img = document.getElementById(id);
+    img.style.display = img.style.display === "block" ? "none" : "block";
+  }
 </script>
 
 </body>
