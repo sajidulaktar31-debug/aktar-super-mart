@@ -1,227 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktar Super Mart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Aktar Super Mart | Grocery Store</title>
-  <meta name="description" content="Aktar Super Mart is your trusted neighborhood grocery store providing fresh vegetables, fruits and daily essentials at affordable prices.">
-  <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            text-align: center;
+        }
 
-  <style>
-    body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:#f7f9fc;
-      color:#333;
-    }
+        header {
+            background: #0a7f2e;
+            color: white;
+            padding: 20px;
+        }
 
-    header{
-      background:linear-gradient(135deg,#1e7f3b,#2cc771);
-      color:white;
-      text-align:center;
-      padding:30px 20px;
-    }
+        header img {
+            width: 100px;
+        }
 
-    header img{
-      width:120px;
-      margin-bottom:10px;
-    }
+        h1 {
+            margin: 10px 0 5px;
+        }
 
-    nav{
-      background:#155c2e;
-      text-align:center;
-      padding:12px;
-    }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
 
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin:0 12px;
-      font-weight:bold;
-    }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            cursor: pointer;
+        }
 
-    .container{
-      max-width:1100px;
-      margin:auto;
-      padding:30px 20px;
-    }
+        .card:hover {
+            transform: scale(1.05);
+        }
 
-    h2{
-      color:#1e7f3b;
-      text-align:center;
-      margin-bottom:20px;
-    }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
 
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-    }
+        .leadership {
+            padding: 50px 20px;
+            background: #ffffff;
+        }
 
-    .card{
-      background:white;
-      padding:20px;
-      border-radius:12px;
-      box-shadow:0 6px 15px rgba(0,0,0,0.08);
-      text-align:center;
-      cursor:pointer;
-    }
+        .leader-card {
+            display: inline-block;
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
 
-    .product-img{
-      display:none;
-      width:130px;
-      margin-top:15px;
-    }
+        .leader-card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #0a7f2e;
+        }
 
-    .btn{
-      display:inline-block;
-      margin:8px;
-      padding:12px 20px;
-      background:#25D366;
-      color:white;
-      border-radius:8px;
-      text-decoration:none;
-      font-weight:bold;
-    }
+        .leader-card h3 {
+            margin-top: 20px;
+        }
 
-    .btn.call{ background:#1e7f3b; }
-    .btn.review{ background:#f4b400; color:#000; }
+        .buttons {
+            margin: 40px 0;
+        }
 
-    iframe{
-      width:100%;
-      height:300px;
-      border:0;
-      border-radius:12px;
-    }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            background: #0a7f2e;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-    footer{
-      background:#155c2e;
-      color:white;
-      text-align:center;
-      padding:15px;
-      margin-top:30px;
-    }
-  </style>
+        .btn:hover {
+            background: #065a1f;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Aktar Super Mart",
-  "url": "https://sajidulaktar31-debug.github.io/aktar-super-mart/logo.png",
-  "logo": "https://sajidulaktar31-debug.github.io/aktar-super-mart/logo.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+91-8638928492",
-    "contactType": "customer service",
-    "areaServed": "IN",
-    "availableLanguage": ["Hindi", "English", "Assamese"]
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Sajidul Aktar",
-    "jobTitle": "Founder & CEO",
-    "url": "https://sajidulaktar31-debug.github.io/aktar-super-mart/"
-  }
-}
-</script>
-  
+
 <body>
 
 <header>
-  <img src="logo.png" alt="Aktar Super Mart Logo">
-  <h1>Aktar Super Mart</h1>
-  <p>Fresh • Affordable • Trusted</p>
+    <img src="Logo.png" alt="Logo">
+    <h1>Aktar Super Mart</h1>
+    <p>Fresh • Quality • Trusted</p>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#products">Products</a>
-  <a href="#contact">Contact</a>
-  <a href="#location">Location</a>
-</nav>
+<section class="products">
 
-<section id="about" class="container">
-  <h2>About Us</h2>
-  <p style="text-align:center;">
-    Aktar Super Mart is your trusted neighborhood grocery store,
-    providing fresh vegetables, fruits, and daily essentials at affordable prices.
-  </p>
-</section>
-
-<!-- PRODUCT GALLERY -->
-<section id="products" class="container">
-  <h2>Our Products</h2>
-
-  <div class="cards">
-    <div class="card" onclick="toggleImage('veg')">
-      Fresh Vegetables
-      <img id="veg" src="vegetable.jpeg" class="product-img">
+    <div class="card">
+        <img src="Vegetable.jpeg">
+        <h3>Vegetables</h3>
     </div>
 
-    <div class="card" onclick="toggleImage('fruit')">
-      Fresh Fruits
-      <img id="fruit" src="fruit.jpeg" class="product-img">
+    <div class="card">
+        <img src="Fruit.jpeg">
+        <h3>Fruits</h3>
     </div>
 
-    <div class="card" onclick="toggleImage('grocery')">
-      Daily Grocery Items
-      <img id="grocery" src="grocery.png" class="product-img">
+    <div class="card">
+        <img src="Grocery.png">
+        <h3>Grocery</h3>
     </div>
 
-    <div class="card" onclick="toggleImage('item')">
-      Rice, Dal & Atta
-      <img id="item" src="item.jpg" class="product-img">
+    <div class="card">
+        <img src="Item.jpg">
+        <h3>Daily Items</h3>
     </div>
-  </div>
+
 </section>
 
-<!-- CONTACT + TIME -->
-<section id="contact" class="container">
-  <h2>Contact & Opening Time</h2>
+<section class="leadership">
+    <h2 style="color:#0a7f2e;">Our Leadership</h2>
 
-  <p style="text-align:center;">
-    🕒 <strong>Opening Hours:</strong><br>
-    Monday – Sunday: 7:00 AM – 10:00 PM
-  </p>
-
-  <p style="text-align:center;">
-    📞 +91 8638928492
-  </p>
-
-  <div style="text-align:center;">
-    <a class="btn call" href="tel:+918638928492">Call Now</a>
-    <a class="btn" href="https://wa.me/918638928492" target="_blank">WhatsApp</a>
-   <a href="https://maps.app.goo.gl/Grn7fBHr97vdU6Gx8" 
-   target="_blank" 
-   class="btn">
-   ⭐ Leave a Google Review
-   </a>
-  </div>
+    <div class="leader-card">
+        <img src="owner.jpg" alt="Owner Photo">
+        <h3>Sajidul Aktar</h3>
+        <p style="color:gray; font-weight:bold;">Owner & Founder</p>
+    </div>
 </section>
 
-<!-- LOCATION -->
-<section id="location" class="container">
-  <h2>Our Location</h2>
-  <p style="text-align:center;">📍 Aktar Super Mart, Assam, India</p>
+<div class="buttons">
 
-  <iframe
-    src="https://www.google.com/maps?q=Aktar+Super+Mart&output=embed"
-    loading="lazy">
-  </iframe>
-</section>
+    <a href="https://maps.app.goo.gl/Grn7fBHr97vdU6Gx8" 
+       target="_blank" 
+       class="btn">
+       ⭐ Leave Google Review
+    </a>
+
+    <a href="https://wa.me/918638928492" 
+       target="_blank" 
+       class="btn">
+       💬 WhatsApp Order
+    </a>
+
+</div>
 
 <footer>
-  © 2026 Aktar Super Mart. All Rights Reserved.
+    © 2026 Aktar Super Mart | All Rights Reserved
 </footer>
-
-<script>
-  function toggleImage(id){
-    const img = document.getElementById(id);
-    img.style.display = img.style.display === "block" ? "none" : "block";
-  }
-</script>
 
 </body>
 </html>
